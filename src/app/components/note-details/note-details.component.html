@@ -1,0 +1,13 @@
+
+<mat-card  (click)="onClickNote(note)" class="flex-column note-wrapper">
+    <div class="flex-row title-and-button">
+        <div class='card-title'>{{note?.name}}</div>
+        <div (click)="removeNote(note)" click-stop-propagation class="remove-button fa fa-times"></div>
+    </div>
+    <div class="note-card-description">
+      <p>  {{note?.description}} </p>
+      <div class="fade-out-truncation"></div>
+    </div>
+
+</mat-card>
+

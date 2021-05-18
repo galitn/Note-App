@@ -1,0 +1,17 @@
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-danger{
+    color: #f44336;
+    margin-top: -15px;
+}
+.btn{
+    margin: 10px;
+    min-width: 100px;
+}
+.control{
+    min-width: 250px;
+}

@@ -1,1 +1,14 @@
+
 /* You can add global styles to this file, and also import other style files */
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Nunito, "Helvetica Neue", sans-serif;background-color: #f9f7f7; }

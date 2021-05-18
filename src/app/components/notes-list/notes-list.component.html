@@ -1,0 +1,15 @@
+<div class="notes-wrapper">
+    <h2>Notes List</h2>
+      <mat-form-field class="search-bar">
+        <input matInput type="text" [(ngModel)]="searchTerm" placeholder="Search">
+        <button mat-button matPrefix mat-icon-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      
+    <div *ngFor="let note of (notes$|async) | filterSearch: searchTerm">
+        <app-note-details [@FadeAnimation]="'in'" (noteClicked)="onNoteClicked($event)" (noteRemoved)="onRemoveNote($event)" [note]="note"></app-note-details>
+        
+    </div>
+</div>
+<div  mat-raised-button   matTooltip="Add new note" class="add-button fa fa-plus-circle" (click)="navigateToNewNote()"></div>
